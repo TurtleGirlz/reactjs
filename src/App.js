@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import './bootstrap.min.css'
+import './centerdiv.css'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <div className="container">
+        <div className="row justify-content-center align-items-center">
+            <div className="col-md-6">
+                <img src={require("./images/big-diamond.png")} alt="" />
+                <div>
+                    <h2>Cryft Cards</h2>
+                </div>
+                <div>
+                    <h3>Welcome to the Moon</h3>
+                </div>
+                <div>
+                    <button type="button">Enter Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
   );
 }
